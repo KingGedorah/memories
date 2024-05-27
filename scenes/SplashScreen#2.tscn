@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2ie3d3gsomsn"]
+[gd_scene load_steps=5 format=3 uid="uid://ceiqa4mew35et"]
 
 [ext_resource type="Script" path="res://scripts/splash_script.gd" id="1_46ny5"]
 [ext_resource type="Texture2D" uid="uid://d22jh0eb2cp44" path="res://assets/background/ocean-cloud-bg/Ocean_2/2.png" id="2_a1iur"]
 [ext_resource type="AudioStream" uid="uid://htcja1uuxt3f" path="res://assets/music/ogg/Ambient 1.ogg" id="3_0pvhy"]
+[ext_resource type="Texture2D" uid="uid://l6d3jitq8mts" path="res://assets/background/makara/makara_fasilkom.png" id="4_b47s7"]
 
-[node name="SplashScreen#1" type="Node"]
+[node name="SplashScreen#2" type="Node"]
 script = ExtResource("1_46ny5")
 
 [node name="Prolog" type="Control" parent="."]
@@ -36,6 +37,11 @@ texture = ExtResource("2_a1iur")
 stream = ExtResource("3_0pvhy")
 autoplay = true
 
+[node name="MakaraFasilkom" type="Sprite2D" parent="Prolog"]
+position = Vector2(-3, -34)
+scale = Vector2(0.451667, 0.484761)
+texture = ExtResource("4_b47s7")
+
 [node name="Label" type="Label" parent="Prolog"]
 layout_mode = 1
 anchors_preset = 8
@@ -43,29 +49,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -195.5
-offset_top = -36.5
-offset_right = 195.5
-offset_bottom = 36.5
+offset_left = -159.5
+offset_top = 83.5
+offset_right = 159.5
+offset_bottom = 122.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "nAUFAL ZHAFARI ZAHRAN"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label2" type="Label" parent="Prolog"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -195.5
-offset_top = -3.0
-offset_right = 195.5
-offset_bottom = 70.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "gamedev 2024 / 2025"
+text = "FAKULTAS ILMU KOMPUTER"
 horizontal_alignment = 1
 vertical_alignment = 1

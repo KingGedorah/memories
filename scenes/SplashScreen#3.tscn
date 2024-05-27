@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1cnts76uifmc"]
+
+[ext_resource type="Script" path="res://scripts/splash_script.gd" id="1_ibecn"]
+[ext_resource type="Texture2D" uid="uid://d22jh0eb2cp44" path="res://assets/background/ocean-cloud-bg/Ocean_2/2.png" id="2_wuml1"]
+[ext_resource type="AudioStream" uid="uid://htcja1uuxt3f" path="res://assets/music/ogg/Ambient 1.ogg" id="3_x5h8f"]
+[ext_resource type="FontFile" uid="uid://biwwmnwarj5p3" path="res://assets/ui/Sta.Toasty_font (1).ttf" id="4_ofskj"]
+
+[node name="SplashScreen#2" type="Node"]
+script = ExtResource("1_ibecn")
+
+[node name="Prolog" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Prolog"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wuml1")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Prolog"]
+stream = ExtResource("3_x5h8f")
+autoplay = true
+
+[node name="Label" type="Label" parent="Prolog"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -265.0
+offset_top = -128.0
+offset_right = 270.0
+offset_bottom = 129.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_ofskj")
+theme_override_font_sizes/font_size = 15
+text = "BackGround:
+
+https://craftpix.net/freebies/free-fairy-tale-game-backgrounds/
+https://craftpix.net/freebies/free-winter-backgrounds-pixel-art/
+https://craftpix.net/freebies/ocean-and-clouds-free-pixel-art-backgrounds/
+
+Character:
+
+https://lucky-loops.itch.io/character-satyr
+
+Music :
+
+https://itch.io/game-assets/top-rated/free/tag-2d/tag-music
+
+UI:
+
+https://srtoasty.itch.io/ui-assets-pack-srt
+https://elthen.itch.io/2d-pixel-art-portal-sprites
+
+Tiles : 
+
+https://anokolisa.itch.io/sidescroller-pixelart-sprites-asset-pack-forest-16x16"
+horizontal_alignment = 1
+vertical_alignment = 3
+autowrap_mode = 1
+text_overrun_behavior = 1
