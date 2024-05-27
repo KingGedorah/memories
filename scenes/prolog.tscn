@@ -1,0 +1,143 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwn0cimc2x4lf"]
+
+[ext_resource type="Script" path="res://scripts/prolog.gd" id="1_kd6tx"]
+[ext_resource type="Texture2D" uid="uid://d22jh0eb2cp44" path="res://assets/background/ocean-cloud-bg/Ocean_2/2.png" id="2_cbmf1"]
+[ext_resource type="AudioStream" uid="uid://htcja1uuxt3f" path="res://assets/music/ogg/Ambient 1.ogg" id="3_cicvs"]
+
+[node name="Prolog" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kd6tx")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cbmf1")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_cicvs")
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -120.0
+offset_right = 268.0
+offset_bottom = -112.0
+theme_override_font_sizes/font_size = 14
+text = "In the vast expanse of the cosmos, where magic intertwines with "
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = -272.0
+offset_top = -98.0
+offset_right = 268.0
+offset_bottom = -90.0
+theme_override_font_sizes/font_size = 14
+text = "the fabric of reality, a lone figure stands amidst the shimmering "
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = -271.0
+offset_top = -78.0
+offset_right = 269.0
+offset_bottom = -70.0
+theme_override_font_sizes/font_size = 14
+text = "glow of teleportation magic. With a desperate plea echoing through "
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = -267.0
+offset_top = -57.0
+offset_right = 283.0
+offset_bottom = -49.0
+theme_override_font_sizes/font_size = 14
+text = "their mind, they reach out, seeking refuge from the chaos of their "
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = -275.0
+offset_top = -37.0
+offset_right = 277.0
+offset_bottom = -29.0
+theme_override_font_sizes/font_size = 14
+text = "world. Yet, as the arcane energies envelop them, something goes awry."
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 0
+offset_left = -267.0
+offset_top = -16.0
+offset_right = 273.0
+offset_bottom = -8.0
+theme_override_font_sizes/font_size = 14
+text = "Time and space become untethered, and the traveler is thrust into "
+
+[node name="Label7" type="Label" parent="."]
+layout_mode = 0
+offset_left = -254.0
+offset_top = 6.0
+offset_right = 255.0
+offset_bottom = 14.0
+theme_override_font_sizes/font_size = 14
+text = "the unknown abyss of existence, their memories scattered like "
+
+[node name="Label8" type="Label" parent="."]
+layout_mode = 0
+offset_left = -268.0
+offset_top = 25.0
+offset_right = 282.0
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 14
+text = "stardust across the cosmic winds. Now adrift through the corridors "
+
+[node name="Label9" type="Label" parent="."]
+layout_mode = 0
+offset_left = -242.0
+offset_top = 46.0
+offset_right = 250.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 14
+text = "of time, they must unravel the mysteries of their fragmented"
+
+[node name="Label10" type="Label" parent="."]
+layout_mode = 0
+offset_left = -242.0
+offset_top = 65.0
+offset_right = 250.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 14
+text = " past, piecing together the remnants of who they once were, "
+
+[node name="Label11" type="Label" parent="."]
+layout_mode = 0
+offset_left = -154.0
+offset_top = 85.0
+offset_right = 162.0
+offset_bottom = 93.0
+theme_override_font_sizes/font_size = 14
+text = "in a quest to find their way back home."
+
+[node name="Label12" type="Label" parent="."]
+layout_mode = 0
+offset_left = -93.0
+offset_top = 143.0
+offset_right = 98.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 14
+text = "PRESS ENTER TO CONTINUE"

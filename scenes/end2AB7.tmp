@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw2upaa5ai41a"]
+
+[ext_resource type="Script" path="res://scripts/end.gd" id="1_q7y5x"]
+[ext_resource type="Texture2D" uid="uid://by6x7trybmxjd" path="res://assets/background/ocean-cloud-bg/Ocean_6/1.png" id="2_covc1"]
+[ext_resource type="AudioStream" uid="uid://y60jqx2tveio" path="res://assets/music/ogg/Night Ambient 2 (Loop).ogg" id="3_bwvef"]
+
+[node name="End" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q7y5x")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_covc1")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_bwvef")
+volume_db = -10.0
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -75.0
+offset_right = 268.0
+offset_bottom = -67.0
+theme_override_font_sizes/font_size = 14
+text = "As the character regains all their memories and finally finds"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = -206.0
+offset_top = -54.0
+offset_right = 202.0
+offset_bottom = -46.0
+theme_override_font_sizes/font_size = 14
+text = " the portal that connects all worlds, a startling "
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = -191.0
+offset_top = -34.0
+offset_right = 204.0
+offset_bottom = -26.0
+theme_override_font_sizes/font_size = 14
+text = "truth dawns upon them. They've been trapped in a "
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = -208.0
+offset_top = -16.0
+offset_right = 210.0
+offset_bottom = -8.0
+theme_override_font_sizes/font_size = 14
+text = "relentless cycle of time and space, losing memories"
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = -229.0
+offset_top = 7.0
+offset_right = 233.0
+offset_bottom = 15.0
+theme_override_font_sizes/font_size = 14
+text = "with each passage through the portal. With a heavy heart,"
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 0
+offset_left = -242.0
+offset_top = 30.0
+offset_right = 241.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 14
+text = "they realize that escaping this loop is an impossible feat."
+
+[node name="Label12" type="Label" parent="."]
+layout_mode = 0
+offset_left = -93.0
+offset_top = 143.0
+offset_right = 98.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 14
+text = "PRESS ENTER TO CONTINUE"

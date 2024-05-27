@@ -1,0 +1,85 @@
+[gd_scene load_steps=12 format=3 uid="uid://6wlywlf4g0kx"]
+
+[ext_resource type="Texture2D" uid="uid://bu3kn74bvslgc" path="res://assets/asset/Purple Portal Sprite Sheet.png" id="1_qgoyc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77un7"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_psub5"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iajwx"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lw1h"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_euraf"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17mdw"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fckp"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7cg8"]
+atlas = ExtResource("1_qgoyc")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d6ul5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77un7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_psub5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iajwx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lw1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_euraf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17mdw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fckp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7cg8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0nemq"]
+radius = 5.0
+height = 42.0
+
+[node name="Portal" type="AnimatedSprite2D"]
+position = Vector2(-6, 4)
+rotation = 3.14159
+sprite_frames = SubResource("SpriteFrames_d6ul5")
+frame_progress = 0.384601
+
+[node name="PortalArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PortalArea"]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_0nemq")
+
+[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://y60jqx2tveio"
+path="res://.godot/imported/Night Ambient 2 (Loop).ogg-286f83d942f81b24cd64efea7bb05aff.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/ogg/Night Ambient 2 (Loop).ogg"
+dest_files=["res://.godot/imported/Night Ambient 2 (Loop).ogg-286f83d942f81b24cd64efea7bb05aff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
