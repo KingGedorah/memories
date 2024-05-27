@@ -7,6 +7,7 @@
 
 [node name="SplashScreen#2" type="Node"]
 script = ExtResource("1_ibecn")
+current_splash = 3
 
 [node name="Prolog" type="Control" parent="."]
 layout_mode = 3
